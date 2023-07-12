@@ -1,2 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+var fizzBuzz = new FizzBuzz();
+Enumerable.Range(1, 100)
+    .ToList()
+        .ForEach(
+                c => Console.WriteLine(fizzBuzz.GetOutput(c))
+                );
+
